@@ -48,8 +48,8 @@
 }
 .form-layer:focus-within > .label-form,
 .form-layer:focus-within > .input-icon{
-    color: var(--style-color);
-    fill: var(--style-color);
+    color: $style;
+    fill: $style;
 }
 
 .label-form{
@@ -82,7 +82,7 @@
     resize:none;
 }
 .form-comment:focus-within{
-    border-color:var(--style-color);
+    border-color:$style;
 }
 .form-comment::placeholder{
     font-weight: 400;
@@ -92,7 +92,7 @@
     color: rgba(117, 117, 117, 0.5);
 }
 .label-link{
-    color: var(--style-color);
+    color: $style;
     text-decoration: underline;
     font-weight: 400;
     font-size: 14px;
@@ -119,7 +119,7 @@
 }
 .agreement-checkbox:checked + .psevdo-check{
     background-image: url(../images/icon/icon-check.svg);
-    border-color: var(--style-color);
+    border-color: $style;
     background-position: center;
     background-size: contain;
 }
@@ -133,10 +133,10 @@
     box-sizing: border-box;
 }
 .form-name:focus{
-    border: 1px solid var(--style-color);
+    border: 1px solid $style;
  }
 .form-name:focus + .input-icon{
-    fill: var(--style-color);   
+    fill: $style;   
 }
 
 .input-icon{
@@ -170,7 +170,7 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close:hover .close-x{
-    fill:var(--style-color);
+    fill:$style;
 }
 
 .form-btn{
@@ -182,12 +182,12 @@
     border: none;
     padding: 10px 55px 10px 55px;
     font-size: 16px;
-    background-color: var(--style-color);
+    background-color: $style;
     color: #fff;
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-btn:hover{
-    background-color: var(--style-color-after);
+    background-color: $style--darck;
     cursor: pointer;
 }
