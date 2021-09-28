@@ -1,0 +1,30 @@
+.flex-center{
+    display:flex;
+    align-items: center;
+}
+body{
+    font-family: $font--ferst;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+img{
+    display: block;
+}
+*{
+box-sizing: border-box;
+}
+ul{
+    list-style: none;   
+}
+a{
+    text-decoration: none;
+}
+input, label {
+    display: block;
+}
