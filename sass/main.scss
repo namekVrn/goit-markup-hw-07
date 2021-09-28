@@ -2,5 +2,14 @@
 @import "utils/font";
 @import "utils/variables";
 @import "utils/global--styles";
+// Открываю блок header
 @import "utils/header";
-
+// Закрываю блок header
+// Открываю блок body
+@import "utils/body__bussines";
+// Закрываю блок body
+@import "utils/adventages";
+@import "utils/ourwork";
+@import "utils/team";
+@import "utils/clients";
+@import "utils/footer";
