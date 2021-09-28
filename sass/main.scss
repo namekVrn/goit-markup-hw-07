@@ -1,15 +1,17 @@
 @import "utils/normalize";
-@import "utils/font";
 @import "utils/variables";
-@import "utils/global--styles";
+@import "components/font";
+@import "components/global--styles";
 // Открываю блок header
-@import "utils/header";
+@import "components/header";
 // Закрываю блок header
 // Открываю блок body
-@import "utils/body__bussines";
+@import "components/body__bussines";
 // Закрываю блок body
-@import "utils/adventages";
-@import "utils/ourwork";
-@import "utils/team";
-@import "utils/clients";
-@import "utils/footer";
+@import "components/adventages";
+@import "components/ourwork";
+@import "components/team";
+@import "components/clients";
+@import "components/footer";
+@import "components/modal";
+
