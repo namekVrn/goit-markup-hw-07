@@ -328,8 +328,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
-  padding-right: 15px;
-  outline: 1px solid red; }
+  padding-right: 15px; }
 
 img {
   display: block; }
@@ -984,7 +983,10 @@ footer {
   margin-bottom: 20px; }
 
 .footer-subscription__form {
-  margin-top: 20px; }
+  margin-top: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
 
 .footer-subscription__input--text {
   padding-top: 15px;
