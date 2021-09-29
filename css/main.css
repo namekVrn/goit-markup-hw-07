@@ -510,8 +510,8 @@ header {
   padding-bottom: 200px;
   background: #2F303A;
   text-align: center;
-  background-color: linear-gradient(to right, #2f303a, #2f303a);
-  background-image: url(/images/bg-her.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, .4)), to(rgba(47, 48, 58, .4))), url(../images/bg-her.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, .4), rgba(47, 48, 58, .4)), url(../images/bg-her.jpg);
   background-size: cover;
   background-position: center; }
 
