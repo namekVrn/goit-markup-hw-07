@@ -11,7 +11,9 @@ footer{
 .reset-margin{
     margin: 0;
 }
-
+.footer-logo{
+    
+}
 .footer-logo__link{
     color: $style;
     font-size: 26px;
@@ -55,4 +57,7 @@ footer{
     color: #fff;
     opacity: 60%;
     font-style: normal;
+}
+.footer-logo__item:last-child{
+    margin-top: 9px;
 }
