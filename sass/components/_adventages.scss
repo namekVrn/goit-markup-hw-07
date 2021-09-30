@@ -9,7 +9,11 @@
 .advantages__list{
     margin-right: 30px;
     width: 270px;
+    &:last-child{
+        margin-right: 0px;
+    }
 }
+
 .advantages__box--icon{
     background-color: #F5F4FA;
     border-radius:4px;
@@ -24,9 +28,7 @@
     height: 70px;
 }
 
-.advantages-list:last-child{
-    margin-right: 0px;
-}
+
 .advantages__title{
     font-size: 14px;
     font-weight: 700;

@@ -71,7 +71,14 @@
     border-radius: 4px;
     outline: none;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus{
+        border: 1px solid $style;
+    }
+    &:focus + .input-icon{
+        fill: $style;  
+    }
 }
+
 .form-comment{
     width: 100%;
     height: 120px;
@@ -80,17 +87,19 @@
     border-radius: 4px;
     padding: 12px 16px 12px 16px;
     resize:none;
+    &:focus-within{
+        border-color:$style;
+    }
+    &::placeholder{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
-.form-comment:focus-within{
-    border-color:$style;
-}
-.form-comment::placeholder{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-}
+
+
 .label-link{
     color: $style;
     text-decoration: underline;
@@ -113,16 +122,17 @@
     letter-spacing: 0.03em;
     color: #757575;
     margin: 0;
+    &:checked + .psevdo-check{
+        background-image: url(../images/icon/icon-check.svg);
+        border-color: $style;
+        background-position: center;
+        background-size: contain;
+    }
 }
 .agreement a{
     margin-left: 5px;
 }
-.agreement-checkbox:checked + .psevdo-check{
-    background-image: url(../images/icon/icon-check.svg);
-    border-color: $style;
-    background-position: center;
-    background-size: contain;
-}
+
 .psevdo-check{
     display: inline-block;
     width: 16px;
@@ -132,12 +142,7 @@
     border-radius: 4px;
     box-sizing: border-box;
 }
-.form-name:focus{
-    border: 1px solid $style;
- }
-.form-name:focus + .input-icon{
-    fill: $style;   
-}
+
 
 .input-icon{
     position:absolute;
@@ -161,6 +166,9 @@
     background-color: #fff;
     right: 8px;
     cursor: pointer;
+    &:hover .close-x{
+        fill:$style;
+    }
     
 }
 .close-x{
@@ -169,9 +177,7 @@
     fill:rgb(1, 1, 1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close:hover .close-x{
-    fill:$style;
-}
+
 
 .form-btn{
     position: absolute;
@@ -186,8 +192,8 @@
     color: #fff;
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form-btn:hover{
-    background-color: $style--darck;
-    cursor: pointer;
+    &:hover{
+        background-color: $style--darck;
+        cursor: pointer;
+    }
 }

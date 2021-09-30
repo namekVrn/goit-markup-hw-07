@@ -53,11 +53,9 @@ header{
 }
 .header__list--link{
     position: relative;
-    
-}
-
-.header__list--link:hover{
-    color: $style;
+    &:hover{
+        color: $style;
+    }
 }
 
 .header__link{
@@ -74,11 +72,11 @@ header{
     font-weight: 500;
     margin-right: 0px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover{
+        color: $style;
+    }
 }
-.header__right-link:first-child{
-    margin-right: 50px;
-    
-}
+
 .header__icon--mail{
     display: block;
     color: $ferst;
@@ -86,17 +84,24 @@ header{
     font-size: 14px;
     font-weight: 500;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    &:hover{
+        color: $style;
+    }
 }
+
 .header__right-link{
     display: inline-flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    &:first-child{
+        margin-right: 50px;
+    }
+    &:hover .header__icon--right{
+        fill: $style;
+    }
 }
-.header__right-link:hover .header__icon--right{
-    fill: $style;
-}
+
 .header__icon--right{
     display: block;
     width: 16px;
@@ -112,9 +117,7 @@ header{
 }
 
 
-.header__icon--mail:hover, .header__icon--tel:hover{
-    color: $style;
-}
+
 .header__list{
     display: flex;
     align-items: center;
